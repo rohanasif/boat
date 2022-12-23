@@ -98,3 +98,26 @@
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+
+.sun {
+    position: absolute;
+    width: 60px;
+    animation-name: sunrise;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes sunrise {
+    0% {
+        left: -10%;
+    }
+
+    25% {
+        left: 5%;
+    }
+
+    100% {
+        left: -10%;
+    }
+}
