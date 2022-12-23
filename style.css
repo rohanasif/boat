@@ -23,7 +23,38 @@
 
 
 .boat {
+    right: 0%;
     position: absolute;
     width: 500px;
-    animation-name: bounce;
+    animation-name: sail;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes sail {
+    0% {
+        right: -10%;
+        bottom: 30%;
+    }
+
+    25% {
+        bottom: 35%;
+    }
+
+    50% {
+
+        bottom: 30%;
+    }
+
+    75% {
+        bottom: 35%;
+    }
+
+    100% {
+        right: 100%;
+        bottom: 30%;
+    }
+
+
 }
